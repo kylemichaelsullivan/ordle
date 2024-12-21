@@ -26,7 +26,7 @@ function Word() {
 
 	const inputs = Array.from({ length: 5 }, (_, index) => (
 		<input
-			className='flex-1 appearance-none border-b border-black text-center capitalize max-w-12'
+			className={`flex-1 appearance-none border-b border-black text-center capitalize max-w-12 ${requiredLetterPositions[index] ? 'bg-green-400' : ''}`}
 			maxLength={1}
 			list='letters'
 			onChange={(e) => handleInput(e, index)}

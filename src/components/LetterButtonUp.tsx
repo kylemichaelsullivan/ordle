@@ -18,7 +18,7 @@ function LetterButtonUp({ letter, status }: LetterButtonUpProps) {
 		status === 0 || status === 1
 			? status === 0
 				? 'text-gray-100'
-				: 'text-green-700'
+				: 'text-yellow-400'
 			: 'text-gray-400 hover:text-gray-700';
 
 	const title = status === 1 ? 'Do Not Require' : 'Require';
