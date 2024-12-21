@@ -23,8 +23,7 @@
 }
 
 @media (min-width: 1440px) {
-	.Letters,
 	.Results {
-		--columns: 26;
+		--columns: 24;
 	}
 }
