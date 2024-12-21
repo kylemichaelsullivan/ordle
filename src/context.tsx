@@ -124,7 +124,7 @@ export function OrdleContextProvider({ children }: OrdleContextProviderProps) {
 		).length;
 		setNonNullLettersCount(count);
 
-		if (count >= 3) {
+		if (count >= 2) {
 			const newFilteredWords = allWords
 				.filter(filterWordsByLetters)
 				.filter((word) =>
