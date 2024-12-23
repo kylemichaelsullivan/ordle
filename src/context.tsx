@@ -7,7 +7,7 @@ import {
 } from 'react';
 
 import type { Letter, Status } from '@/types';
-import { allWords } from '@/types';
+import { allWords } from '@/../public/allWords';
 
 type LettersStatus = {
 	[key in Letter]: Status;
