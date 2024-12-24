@@ -162,6 +162,8 @@ export function OrdleContextProvider({ children }: OrdleContextProviderProps) {
 		setRequiredLetters(initialRequiredLetters);
 		setRequiredLetterPositions(initialRequiredLetterPositions);
 		setFilteredWords(initialFilteredWords);
+
+		document.querySelectorAll('input').forEach((input) => input.blur());
 	}
 
 	useEffect(() => {
