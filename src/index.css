@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.max-h-screen {
+	max-height: 100dvh;
+}
+
 .Letters,
 .Results {
 	--columns: 2;
