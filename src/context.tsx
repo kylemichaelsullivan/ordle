@@ -113,7 +113,20 @@ export function OrdleContextProvider({ children }: OrdleContextProviderProps) {
 	) {
 		setRequiredLetterPositions((prevPositions) => {
 			const newPositions = [...prevPositions];
+			const prevLetter = newPositions[index];
 			newPositions[index] = letter;
+
+			setLettersStatus((prevStatus) => {
+				const newStatus = { ...prevStatus };
+				if (prevLetter) {
+					newStatus[prevLetter] = null;
+				}
+				if (letter) {
+					newStatus[letter] = 1;
+				}
+				return newStatus;
+			});
+
 			return newPositions;
 		});
 	}
