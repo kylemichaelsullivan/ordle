@@ -48,7 +48,7 @@ function Word() {
 			ref={(el) => {
 				inputRefs.current[index] = el;
 			}}
-			className={`appearance-none border border-black text-center capitalize w-12 h-12 ${requiredLetterPositions[index] ? 'bg-green-400' : ''}`}
+			className={`h-12 w-12 appearance-none border border-black text-center capitalize ${requiredLetterPositions[index] ? 'bg-green-400' : ''}`}
 			maxLength={1}
 			list='letters'
 			onChange={(e) => handleInput(e, index)}
@@ -67,7 +67,7 @@ function Word() {
 	);
 
 	return (
-		<div className='Word flex justify-center gap-1 max-w-full'>
+		<div className='Word flex max-w-full justify-center gap-1'>
 			{inputs}
 			{datalist}
 		</div>
