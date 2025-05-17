@@ -9,7 +9,7 @@ function ResultsContent() {
 	return (
 		<div className='Results grid list-none gap-1 gap-y-4 border p-4 shadow-xl'>
 			{nonNullLettersCount < 2 ? (
-				<p className='col-span-full text-center text-gray-400'>
+				<p className='col-span-full text-gray-400 text-center'>
 					Select 2 or More <FontAwesomeIcon icon={faThumbsUp} /> or{' '}
 					<FontAwesomeIcon icon={faThumbsDown} />
 				</p>
